@@ -37,7 +37,7 @@ rand(){
 
 
 
-cd $ScriptsDir
+cd /jd/scripts
 # 清理过期脚本
 rm -rf ZCY01_jd_try.js
 rm -rf i-chenzhe_jd_asus_iqiyi.js
@@ -83,7 +83,7 @@ do
 done
 
 ##############################同步 diy.sh ##########################################
-cd $ConfigDir
+cd /jd/config
 echo -e "开始更新 diy.sh "
 wget -q --no-check-certificate https://raw.githubusercontent.com/kissfast/test/main/diy.sh -O diy.sh.new
 if [ $? -eq 0 ]; then
@@ -95,7 +95,7 @@ else
 fi
 
 ##############################同步 manual-update.sh ##########################################
-cd $ShellDir
+cd /jd/config
 echo -e "开始更新 manual-update.sh "
 wget -q --no-check-certificate https://raw.githubusercontent.com/kissfast/test/main/diy.sh -O manual-update.sh.new
 if [ $? -eq 0 ]; then
