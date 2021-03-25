@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 #添加hosts;如无法正常下载Github Raw文件，请注释掉
-Host_IP=('151.101.88.133' '151.101.228.133')
-Host_Name=('raw.githubusercontent.com' 'raw.githubusercontent.com')
-for (( i=0; i<=${#Host_IP[@]}; i++ )) do
-echo "${Host_IP[$i]} ${Host_Name[$i]}" >> /etc/hosts
-done
+#Host_IP=('151.101.88.133' '151.101.228.133')
+#Host_Name=('raw.githubusercontent.com' 'raw.githubusercontent.com')
+#for (( i=0; i<=${#Host_IP[@]}; i++ )) do
+#echo "${Host_IP[$i]} ${Host_Name[$i]}" >> /etc/hosts
+#done
 
 ##############################作者昵称（必填）##############################
 # 使用空格隔开
@@ -70,9 +70,9 @@ do
 	  if [ -z "${script_date}" ];then
 	    cron_min=$(rand 1 59)
 	    cron_hour=$(rand 7 9)
-	    [ $(grep -c "$croname" /jd/config/crontab.list) -eq 0 ] && sed -i "/hangup/a${cron_min} ${cron_hour} * * * bash jd $croname"  /jd/config/crontab.list
+	    [ $(grep -c "$croname" /jd/config/crontab.list) -eq 0 ] && sed -i "/hangup/a${cron_min} ${cron_hour} * * * bash /jd/jd.sh $croname"  /jd/config/crontab.list
 	  else
-	    [ $(grep -c "$croname" /jd/config/crontab.list) -eq 0 ] && sed -i "/hangup/a${script_date} bash jd $croname"  /jd/config/crontab.list
+	    [ $(grep -c "$croname" /jd/config/crontab.list) -eq 0 ] && sed -i "/hangup/a${script_date} bash /jd/jd.sh $croname"  /jd/config/crontab.list
 	  fi
     else
       [ -f $name.new ] && rm -f $name.new
