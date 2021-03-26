@@ -1,0 +1,65 @@
+jd_scripts:
+  image: lxk0301/jd_scripts
+  # 配置服务器资源约束。此例子中服务被限制为使用内存不超过200M以及cpu不超过0.2（单核的20%）
+  # 经过实际测试，建议不低于200M
+  # deploy:
+  #   resources:
+  #     limits:
+  #       cpus: '0.2'
+  #       memory: 200M
+  container_name: jd_scripts
+  restart: always
+  volumes:
+    - ./my_crontab_list.sh:/scripts/docker/my_crontab_list.sh
+    - ./logs:/scripts/logs
+    #- ./scripts:/scripts
+  tty: true
+  # 因为更换仓库地址可能git pull的dns解析不到，可以在配置追加hosts
+  extra_hosts:
+    - "gitee.com:180.97.125.228"
+    - "github.com:13.229.188.59"
+    - "raw.githubusercontent.com:151.101.228.133"
+  environment:
+    #脚本更新仓库地址，配置了会切换到对应的地址
+    - REPO_URL=git@gitee.com:lxk0301/jd_scripts.git
+    # 注意环境变量填写值的时候一律不需要引号（""或者''）下面这些只是事例，根据自己的需求增加删除
+    #jd cookies
+    # 例: JD_COOKIE=pt_key=XXX;pt_pin=XXX
+    - JD_COOKIE=pt_key=AAJgRv4WADDRdTLPXaO5nsbwpGz3teJvm61ZNERCwQdPanG92iL48-OVx3qcjwE1eELAizLqeZ4;pt_pin=1315230446-107837&pt_key=AAJgRv33ADB6_DmMeiZBgxNIF4m8Bby4BweaT4bqqZDsvmNVMTgSzbsToVLe2Z69myGF_DkuHEQ;pt_pin=%E4%B8%A5%E5%9D%87%E5%B9%B3&pt_key=AAJgRMXuADDAX0qiRrHw0SvJtQkdha7nQgk57pZp2CRYu1ad-THOluZ8lwMgtEzupANd9r5Bp_c;pt_pin=jd_5661e4b2d24ad&pt_key=AAJgRMazADCFKVWm_HenzSO_zMO7OJ5o6wZ-f-ljOyH5XhgbQnS326eQjOV1Kw3V-uw1GfJelvo;pt_pin=jd_5c14d72c9320e&pt_key=AAJgRM7rADCG3TwzJdGfEDD6B7avCygPkFuJys_bInHI2CTmjVpexrCfOwzkqYKxUD1vmJivRVE;pt_pin=jd_MVdmzKDIetyw&pt_key=AAJgRM8qADDPPddeioe-xyEHDC-RxJuVVKwvs1s5DXEXEmtmUHy48Q3OvgYOqqjr0C9S1An98t8;pt_pin=jd_49bdea2d7eef7&pt_key=AAJgRM_pADDv528Vijq9FWtocVlF9N8tyoAnxrWhh-5EepdjKSNdUce0t8UNJ5_4JzjE1uGy9V0;pt_pin=terry8000&pt_key=AAJgROYJADCioz1zSAxXsDllVmI_HvstT8P6tbOJOAplcy-m5p7RjeZ5AkXwAyvOrQCdetu2tdE;pt_pin=wdCopTazWxPGuK
+    #微信server酱通
+    #- PUSH_KEY=
+    - PUSH_PLUS_TOKEN=a1e3061ae3b44c7686019dba9119f542
+    - PUSH_PLUS_USER=1234
+    #telegram机器人通知
+    - TG_BOT_TOKEN=1779682895:AAEhdehnW5WUMihd6SrcdIi-8h-szNbQu1w
+    - TG_USER_ID=1021701440
+    - TG_PROXY_HOST=192.168.0.3
+    - TG_PROXY_PORT=7890
+    - ENABLE_AUTO_HELP=true
+    - CRZAY_JOY_COIN_ENABLE=Y
+    - DO_NOT_RUN_SCRIPTS=
+    - UN_SUBSCRIBES=300&300
+    #京东种豆得豆
+    - PLANT_BEAN_SHARECODES=
+    #京东农场
+    # 例: FRUITSHARECODES=京东农场的互助码
+    - FRUITSHARECODES=
+    #京东萌宠
+    # 例: PETSHARECODES=东东萌宠的互助码
+    - PETSHARECODES=
+    # 宠汪汪的喂食数量
+    - JOY_FEED_COUNT=
+    #东东超市
+    # - SUPERMARKET_SHARECODES=
+    #兑换多少数量的京豆（20，或者1000京豆,或者其他奖品的文字）
+    # 例: MARKET_COIN_TO_BEANS=1000
+    - MARKET_COIN_TO_BEANS=
+    #是否开启debug模式打印日志
+    # 例: JD_DEBUG=false
+    - JD_DEBUG=
+    #如果设置了 RANDOM_DELAY_MAX ，则会启用随机延迟功能，延迟随机 0 到 RANDOM_DELAY_MAX-1 秒。如果不设置此项，则不使用延迟。
+    #并不是所有的脚本都会被启用延迟，因为有一些脚本需要整点触发。延迟的目的有两个，1是降低抢占cpu资源几率，2是降低检查风险（主要是1）
+    #填写数字，单位为秒，比如写为 RANDOM_DELAY_MAX=30  就是随机产生0到29之间的一个秒数，执行延迟的意思。
+    - RANDOM_DELAY_MAX=0
+    #使用自定义定任务追加默认任务之后，上面volumes挂载之后这里配置对应的文件名
+    - CUSTOM_LIST_FILE=my_crontab_list.sh
