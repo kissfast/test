@@ -40,6 +40,7 @@ jd_scripts:
     - CRZAY_JOY_COIN_ENABLE=Y
     - DO_NOT_RUN_SCRIPTS=
     - UN_SUBSCRIBES=300&300
+    - JOY_RUN_HELP_MYSELF=true
     #京东种豆得豆
     #- PLANT_BEAN_SHARECODES=
     #京东农场
