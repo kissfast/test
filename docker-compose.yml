@@ -39,7 +39,7 @@ jd_scripts:
     - ENABLE_AUTO_HELP=true
     - CRZAY_JOY_COIN_ENABLE=Y
     - DO_NOT_RUN_SCRIPTS=
-    - UN_SUBSCRIBES=300&300
+    - UN_SUBSCRIBES=400&400
     - JOY_RUN_HELP_MYSELF=true
     #京东种豆得豆
     #- PLANT_BEAN_SHARECODES=
@@ -55,7 +55,7 @@ jd_scripts:
     # - SUPERMARKET_SHARECODES=
     #兑换多少数量的京豆（20，或者1000京豆,或者其他奖品的文字）
     # 例: MARKET_COIN_TO_BEANS=1000
-    - MARKET_COIN_TO_BEANS=20
+    #- MARKET_COIN_TO_BEANS=20
     #是否开启debug模式打印日志
     # 例: JD_DEBUG=false
     #- JD_DEBUG=
