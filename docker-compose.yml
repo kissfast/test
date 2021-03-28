@@ -55,7 +55,7 @@ jd_scripts:
     # - SUPERMARKET_SHARECODES=
     #兑换多少数量的京豆（20，或者1000京豆,或者其他奖品的文字）
     # 例: MARKET_COIN_TO_BEANS=1000
-    #- MARKET_COIN_TO_BEANS=20
+    - MARKET_COIN_TO_BEANS=20
     #是否开启debug模式打印日志
     # 例: JD_DEBUG=false
     #- JD_DEBUG=
@@ -65,4 +65,4 @@ jd_scripts:
     - RANDOM_DELAY_MAX=0
     #使用自定义定任务追加默认任务之后，上面volumes挂载之后这里配置对应的文件名
     - CUSTOM_LIST_FILE=my_crontab_list.sh
-    - CUSTOM_LIST_MERGE_TYPE=overwrite
+    #- CUSTOM_LIST_MERGE_TYPE=overwrite
