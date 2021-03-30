@@ -17,14 +17,14 @@ author_list="i-chenzhe"
 # scripts_base_url_1=https://gitee.com/qq34347476/quantumult-x/raw/master/
 #scripts_base_url_1=https://raw.githubusercontent.com/qq34347476/js_script/master/scripts/
 #scripts_base_url_2=https://raw.githubusercontent.com/ZCY01/daily_scripts/main/jd/
-scripts_base_url_1=https://raw.githubusercontent.com/i-chenzhe/qx/main/
+scripts_base_url_1=https://raw.githubusercontent.com/monk-coder/dust/dust/normal/
 
 
 ##############################作者脚本名称（必填）##############################
 # 将相应作者的脚本填写到以下变量中
 #my_scripts_list_1="format_share_jd_code.js jd_try.js jd_joy_run.js"
-#my_scripts_list_2="jd_priceProtect.js"
-my_scripts_list_1="z_lenovo.js z_marketLottery.js z_mother_jump.js z_grassy.js z_xmf.js jd_entertainment.js jd_shake.js"
+my_scripts_list_1="monk_shop_lottery.js"
+#my_scripts_list_1="z_lenovo.js z_marketLottery.js z_mother_jump.js z_grassy.js z_xmf.js jd_entertainment.js jd_shake.js"
 
 
 ##############################随机函数##########################################
