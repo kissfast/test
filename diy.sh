@@ -8,7 +8,7 @@
 
 ##############################作者昵称（必填）##############################
 # 使用空格隔开
-author_list="monk-coder"
+author_list="monk-coder z"
 
 ##############################作者脚本地址URL（必填）##############################
 # 例如：https://raw.githubusercontent.com/whyour/hundun/master/quanx/jx_nc.js
