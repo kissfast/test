@@ -16,9 +16,8 @@ author_list="monk-coder"
 # 2.将地址最后的 “脚本名称+后缀” 剪切到下一个变量里（my_scripts_list_xxx）
 # scripts_base_url_1=https://gitee.com/qq34347476/quantumult-x/raw/master/
 #scripts_base_url_1=https://raw.githubusercontent.com/qq34347476/js_script/master/scripts/
-scripts_base_url_2=https://raw.githubusercontent.com/monk-coder/dust/dust/i-chenzhe/
 scripts_base_url_1=https://raw.githubusercontent.com/monk-coder/dust/dust/normal/
-
+scripts_base_url_2=https://raw.githubusercontent.com/monk-coder/dust/dust/i-chenzhe/
 
 ##############################作者脚本名称（必填）##############################
 # 将相应作者的脚本填写到以下变量中
