@@ -8,31 +8,31 @@
 
 ##############################作者昵称（必填）##############################
 # 使用空格隔开
-author_list="monk-coder z"
+author_list="i-chenzhe monk-coder"
 
 ##############################作者脚本地址URL（必填）##############################
 # 例如：https://raw.githubusercontent.com/whyour/hundun/master/quanx/jx_nc.js
 # 1.从作者库中随意挑选一个脚本地址，每个作者的地址添加一个即可，无须重复添加
 # 2.将地址最后的 “脚本名称+后缀” 剪切到下一个变量里（my_scripts_list_xxx）
 # scripts_base_url_1=https://gitee.com/qq34347476/quantumult-x/raw/master/
-#scripts_base_url_1=https://raw.githubusercontent.com/qq34347476/js_script/master/scripts/
-scripts_base_url_1=https://raw.githubusercontent.com/monk-coder/dust/dust/normal/
-scripts_base_url_2=https://raw.githubusercontent.com/monk-coder/dust/dust/i-chenzhe/
+#scripts_base_url_2=https://raw.githubusercontent.com/qq34347476/js_script/master/scripts/
+scripts_base_url_2=https://raw.githubusercontent.com/monk-coder/dust/dust/normal/
+scripts_base_url_1=https://raw.githubusercontent.com/monk-coder/dust/dust/i-chenzhe/
 
 ##############################作者脚本名称（必填）##############################
 # 将相应作者的脚本填写到以下变量中
-#my_scripts_list_1="format_share_jd_code.js jd_try.js jd_joy_run.js"
-my_scripts_list_1="monk_shop_lottery.js"
-my_scripts_list_2="z_lenovo.js z_marketLottery.js z_mother_jump.js z_grassy.js z_xmf.js z_entertainment.js z_shake.js z_unionPoster.js"
+my_scripts_list_1="z_lenovo.js z_marketLottery.js z_mother_jump.js z_grassy.js z_xmf.js z_entertainment.js z_shake.js z_unionPoster.js"
+my_scripts_list_2="monk_shop_lottery.js"
+#my_scripts_list_2="z_lenovo.js"
 
 
 ##############################随机函数##########################################
-rand(){
-    min=$1
-    max=$(($2-$min+1))
-    num=$(cat /proc/sys/kernel/random/uuid | cksum | awk -F ' ' '{print $1}')
-    echo $(($num%$max+$min))
-}
+#rand(){
+#    min=$1
+ #   max=$(($2-$min+1))
+  #  num=$(cat /proc/sys/kernel/random/uuid | cksum | awk -F ' ' '{print $1}')
+  #  echo $(($num%$max+$min))
+#}
 
 
 
@@ -84,14 +84,14 @@ done
 ##############################同步 diy.sh ##########################################
 cd /jd/config
 echo -e "开始更新 diy.sh "
-wget -q --no-check-certificate https://raw.githubusercontent.com/kissfast/test/main/diy.sh -O diy.sh.new
-if [ $? -eq 0 ]; then
-  mv -f diy.sh.new diy.sh
-  echo -e "更新 diy.sh 完成"
-else
-  rm -rf diy.sh.new
-  echo -e "更新 diy.sh 失败，使用上一次正常的版本...\n"
-fi
+#wget -q --no-check-certificate https://raw.githubusercontent.com/kissfast/test/main/diy.sh -O diy.sh.new
+#if [ $? -eq 0 ]; then
+#  mv -f diy.sh.new diy.sh
+#  echo -e "更新 diy.sh 完成"
+#else
+##  rm -rf diy.sh.new
+#  echo -e "更新 diy.sh 失败，使用上一次正常的版本...\n"
+#fi
 
 ##############################同步 manual-update.sh ##########################################
 cd /jd/config
