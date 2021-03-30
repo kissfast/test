@@ -16,7 +16,7 @@ author_list="monk-coder"
 # 2.将地址最后的 “脚本名称+后缀” 剪切到下一个变量里（my_scripts_list_xxx）
 # scripts_base_url_1=https://gitee.com/qq34347476/quantumult-x/raw/master/
 #scripts_base_url_1=https://raw.githubusercontent.com/qq34347476/js_script/master/scripts/
-#scripts_base_url_2=https://raw.githubusercontent.com/ZCY01/daily_scripts/main/jd/
+scripts_base_url_2=https://raw.githubusercontent.com/monk-coder/dust/dust/i-chenzhe/
 scripts_base_url_1=https://raw.githubusercontent.com/monk-coder/dust/dust/normal/
 
 
@@ -24,7 +24,7 @@ scripts_base_url_1=https://raw.githubusercontent.com/monk-coder/dust/dust/normal
 # 将相应作者的脚本填写到以下变量中
 #my_scripts_list_1="format_share_jd_code.js jd_try.js jd_joy_run.js"
 my_scripts_list_1="monk_shop_lottery.js"
-#my_scripts_list_1="z_lenovo.js z_marketLottery.js z_mother_jump.js z_grassy.js z_xmf.js jd_entertainment.js jd_shake.js"
+my_scripts_list_2="z_lenovo.js z_marketLottery.js z_mother_jump.js z_grassy.js z_xmf.js z_entertainment.js z_shake.js z_unionPoster.js"
 
 
 ##############################随机函数##########################################
