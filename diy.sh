@@ -22,7 +22,7 @@ scripts_base_url_1=https://raw.githubusercontent.com/monk-coder/dust/dust/i-chen
 ##############################作者脚本名称（必填）##############################
 # 将相应作者的脚本填写到以下变量中
 my_scripts_list_1="z_lenovo.js z_marketLottery.js z_mother_jump.js z_grassy.js z_xmf.js z_entertainment.js z_shake.js z_unionPoster.js"
-my_scripts_list_2="monk_shop_lottery.js"
+my_scripts_list_2="monk_shop_lottery.js monk_shop_follow_sku.js"
 #my_scripts_list_2="z_lenovo.js"
 
 
@@ -84,14 +84,14 @@ done
 ##############################同步 diy.sh ##########################################
 cd /jd/config
 echo -e "开始更新 diy.sh "
-#wget -q --no-check-certificate https://raw.githubusercontent.com/kissfast/test/main/diy.sh -O diy.sh.new
-#if [ $? -eq 0 ]; then
-#  mv -f diy.sh.new diy.sh
-#  echo -e "更新 diy.sh 完成"
-#else
-##  rm -rf diy.sh.new
-#  echo -e "更新 diy.sh 失败，使用上一次正常的版本...\n"
-#fi
+wget -q --no-check-certificate https://raw.githubusercontent.com/kissfast/test/main/diy.sh -O diy.sh.new
+if [ $? -eq 0 ]; then
+  mv -f diy.sh.new diy.sh
+  echo -e "更新 diy.sh 完成"
+else
+  rm -rf diy.sh.new
+  echo -e "更新 diy.sh 失败，使用上一次正常的版本...\n"
+fi
 
 ##############################同步 manual-update.sh ##########################################
 cd /jd/config
