@@ -22,7 +22,7 @@ scripts_base_url_1=https://raw.githubusercontent.com/monk-coder/dust/dust/i-chen
 ##############################作者脚本名称（必填）##############################
 # 将相应作者的脚本填写到以下变量中
 my_scripts_list_1="z_lenovo.js z_marketLottery.js z_mother_jump.js z_grassy.js z_xmf.js z_entertainment.js z_shake.js z_unionPoster.js"
-my_scripts_list_2="monk_shop_lottery.js monk_shop_follow_sku.js"
+my_scripts_list_2="monk_shop_lottery.js monk_shop_follow_sku.js monk_inter_shop_sign.js"
 #my_scripts_list_2="z_lenovo.js"
 
 
