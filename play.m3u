@@ -1,3 +1,29 @@
+#EXTINF:-1 tvg-name="凤凰资讯" tvg-logo="https://live.fanmingming.cn/tv/凤凰资讯.png",凤凰资讯
+http://r.jdshipin.com/0Rp07
+#EXTINF:-1 tvg-name="凤凰香港" tvg-logo="https://live.fanmingming.cn/tv/凤凰香港.png",凤凰香港
+http://r.jdshipin.com/yDoTN
+#EXTINF:-1 tvg-name="翡翠台" tvg-logo="https://live.fanmingming.cn/tv/翡翠台.png",翡翠台
+http://r.jdshipin.com/62WM7
+#EXTINF:-1 tvg-name="翡翠台" tvg-logo="https://live.fanmingming.cn/tv/翡翠台.png",翡翠台
+http://r.jdshipin.com/qrfbg
+#EXTINF:-1 tvg-name="无线新闻" tvg-logo="https://live.fanmingming.cn/tv/无线新闻.png",无线新闻
+http://r.jdshipin.com/CkuBd
+#EXTINF:-1 tvg-name="明珠台" tvg-logo="https://live.fanmingming.cn/tv/明珠台.png",明珠台
+http://r.jdshipin.com/ZQ4kN
+#EXTINF:-1 tvg-name="TVB Plus" tvg-logo="https://live.fanmingming.cn/tv/TVB Plus.png",TVB Plus
+http://r.jdshipin.com/ndGgS
+#EXTINF:-1 tvg-name="TVB Plus" tvg-logo="https://live.fanmingming.cn/tv/TVB Plus.png",TVB Plus
+http://r.jdshipin.com/Nr5jq
+#EXTINF:-1 tvg-name="TVB星河" tvg-logo="https://live.fanmingming.cn/tv/TVB星河.png",TVB星河
+http://r.jdshipin.com/Voac4
+#EXTINF:-1 tvg-name="TVB星河" tvg-logo="https://live.fanmingming.cn/tv/TVB星河.png",TVB星河
+http://r.jdshipin.com/sXuuD
+#EXTINF:-1 tvg-name="华丽翡翠台" tvg-logo="https://live.fanmingming.cn/tv/华丽翡翠台.png",华丽翡翠台
+http://r.jdshipin.com/thuYX
+#EXTINF:-1 tvg-name="ViuTV" tvg-logo="https://live.fanmingming.cn/tv/ViuTV.png",ViuTV
+http://r.jdshipin.com/vSJvl
+#EXTINF:-1 tvg-name="翡翠台" tvg-logo="https://live.fanmingming.cn/tv/翡翠台.png",翡翠台
+http://hls.168.us.kg/u/81/master.m3u8
 #EXTM3U x-tvg-url="https://live.fanmingming.cn/e.xml"
 #EXTINF:-1 tvg-name="4K专区" tvg-logo="https://live.fanmingming.cn/tv/4K专区.png",group-title="4K频道",4K专区
 http://ltccq.cqa.bcs.ottcn.com/000000001666/6000000003000004748/1.m3u8
@@ -429,3 +455,4 @@ http://ltccq.cqa.bcs.ottcn.com/000000001666/100000000100111047/1.m3u8
 http://ltccq.cqa.bcs.ottcn.com/000000001666/100000000100111082/1.m3u8
 #EXTINF:-1 tvg-name="北京纪实" tvg-logo="https://live.fanmingming.cn/tv/北京纪实.png",group-title="其他频道",北京纪实
 http://ltccq.cqa.bcs.ottcn.com/000000001666/100000000100111076/1.m3u8
+
